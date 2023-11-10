@@ -36,8 +36,6 @@ function randomSquare() {
 
     let randomNumber = Math.floor(Math.random() * 9)
 
-    console.log(Math.floor(Math.random() * 9))
-
     let randomSquare = state.view.squares[randomNumber]
 
     randomSquare.classList.add("enemy")
@@ -51,7 +49,6 @@ async function countDown() {
         clearInterval(state.actions.timerId)
         clearInterval(state.actions.countDownId)
         alert(`Game Over! Você fez ${state.values.hitCounter} pontos`)
-        removeHitBoxListener()
         return;
     }
 
@@ -72,12 +69,6 @@ function addHitBoxListener() {
                 playHitSound()
             }
         })
-    });
-}
-
-function removeHitBoxListener() {
-    state.view.squares.forEach(square => {
-        square.removeEventListener("mousedown")
     });
 }
 
