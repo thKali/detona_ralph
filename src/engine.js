@@ -51,6 +51,7 @@ async function countDown() {
         clearInterval(state.actions.timerId)
         clearInterval(state.actions.countDownId)
         alert(`Game Over! Você fez ${state.values.hitCounter} pontos`)
+        removeHitBoxListener()
         return;
     }
 
@@ -71,6 +72,12 @@ function addHitBoxListener() {
                 playHitSound()
             }
         })
+    });
+}
+
+function removeHitBoxListener() {
+    state.view.squares.forEach(square => {
+        square.removeEventListener("mousedown")
     });
 }
 
