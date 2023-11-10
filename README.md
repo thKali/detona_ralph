@@ -8,3 +8,5 @@ A ideia é abordar conceitos por trás das cortinas dos frameworks de jogos e so
 ![image](https://github.com/thKali/detona_ralph/assets/100535432/107d82c8-e99d-45d0-a7c6-a0d67b96f6b0)
 
 As próximas features a serem desenvolvidas / em desenvolvimento podem ser encontradas nas issues.
+
+Jogue agora [clicando aqui](https://thkali.github.io/detona_ralph)!
